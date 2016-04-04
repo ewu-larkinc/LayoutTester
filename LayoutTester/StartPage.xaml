@@ -16,42 +16,75 @@
 					AbsoluteLayout.LayoutBounds="0,0,1,1"
 					AbsoluteLayout.LayoutFlags="All"/>
 
-
-			<ContentView	AbsoluteLayout.LayoutBounds="0.5,0.9,0.75,0.25"
-							AbsoluteLayout.LayoutFlags="All"
-							HorizontalOptions="FillAndExpand"
-							VerticalOptions="FillAndExpand"
-							BackgroundColor="White"
-							IsVisible="true"
-							IsEnabled="true"/>
-
-			<StackLayout	AbsoluteLayout.LayoutBounds="0.5,0.9,0.75,0.25"
+			<StackLayout	AbsoluteLayout.LayoutBounds="0.5,0.9,0.75,0.20"
 							AbsoluteLayout.LayoutFlags="All"
 							HorizontalOptions = "FillAndExpand"
-							VerticalOptions="FillAndExpand"
-							BackgroundColor="White"
+							VerticalOptions="Fill"
 							IsVisible="true"
 							IsEnabled="true" >
+
+				<StackLayout.BackgroundColor>
+					<OnPlatform x:TypeArguments="Color" iOS="White" Android="Black"/>
+				</StackLayout.BackgroundColor>
 
 				<Entry	x:Name="usernameEntry"
 						Placeholder="Username/E-Mail"
 						IsEnabled="true"
 						HorizontalOptions="CenterAndExpand"
-						VerticalOptions="Start"/>
+						VerticalOptions="CenterAndExpand"
+						TextColor="Black"/>
 				<Entry	x:Name="userPassword"
-						Placeholder="Username/E-Mail"
+						Placeholder="Password"
 						IsEnabled="true"
 						IsPassword="true"
 						HorizontalOptions="CenterAndExpand"
-						VerticalOptions="Center"/>
+						VerticalOptions="CenterAndExpand"
+						TextColor="Black"/>
 				<Button	Text="Login"
 						IsEnabled="true"
 						HorizontalOptions="CenterAndExpand"
-						VerticalOptions="End"/>
+						VerticalOptions="CenterAndExpand"/>
 				
 
 				
 			</StackLayout>
+
+			<!---<RelativeLayout	AbsoluteLayout.LayoutBounds="0.5,0.9,0.75,0.2"
+							AbsoluteLayout.LayoutFlags="All"
+							HorizontalOptions="FillAndExpand"
+							VerticalOptions="FillAndExpand">
+
+				<RelativeLayout.BackgroundColor>
+					<OnPlatform x:TypeArguments="Color" iOS="White" Android="Black"/>
+				</RelativeLayout.BackgroundColor>
+
+				<Entry	x:Name="usernameEntry"
+						Placeholder="Username/E-Mail"
+						IsEnabled="true"
+						TextColor="Black"
+						HorizontalOptions="Center"
+						RelativeLayout.WidthConstraint="{ConstraintExpression	Type=RelativeToParent,
+																				Property=Width,
+																				Factor=0.6}"/>
+				<Entry	x:Name="userPassword"
+						Placeholder="Password"
+						IsEnabled="true"
+						IsPassword="true"
+						HorizontalOptions="Center"
+						RelativeLayout.WidthConstraint="{ConstraintExpression	Type=RelativeToParent,
+																				Property=Width,
+																				Factor=0.6}"/>
+				<Button	Text="Login"
+						IsEnabled="true"
+						HorizontalOptions="Center"
+						RelativeLayout.WidthConstraint="{ConstraintExpression	Type=RelativeToParent,
+																				Property=Width,
+																				Factor=0.6}"
+						RelativeLayout.YConstraint="{ConstraintExpression	Type=RelativeToParent,
+																			Property=Y,
+																			"/>
+														
+			</RelativeLayout>-->
 
 
 
