@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="iOS/LayoutTester.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_5_API_19" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LayoutTester/StartPage.xaml">
+    <Files>
+      <File FileName="LayoutTester/LayoutTester.cs" Line="1" Column="1" />
+      <File FileName="LayoutTester/StartPage.xaml" Line="25" Column="35" />
+      <File FileName="LayoutTester/StartPage.xaml.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
