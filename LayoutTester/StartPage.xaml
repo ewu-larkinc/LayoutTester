@@ -16,7 +16,7 @@
 					AbsoluteLayout.LayoutBounds="0,0,1,1"
 					AbsoluteLayout.LayoutFlags="All"/>
 
-			<StackLayout	AbsoluteLayout.LayoutBounds="0.5,0.9,0.75,0.20"
+			<StackLayout	AbsoluteLayout.LayoutBounds="0.5,0.9,0.6,0.20"
 							AbsoluteLayout.LayoutFlags="All"
 							HorizontalOptions = "FillAndExpand"
 							VerticalOptions="Fill"
@@ -32,18 +32,19 @@
 						IsEnabled="true"
 						HorizontalOptions="CenterAndExpand"
 						VerticalOptions="CenterAndExpand"
-						TextColor="Black"/>
+						WidthRequest="200"/>
 				<Entry	x:Name="userPassword"
 						Placeholder="Password"
 						IsEnabled="true"
 						IsPassword="true"
 						HorizontalOptions="CenterAndExpand"
 						VerticalOptions="CenterAndExpand"
-						TextColor="Black"/>
+						WidthRequest="200"/>
 				<Button	Text="Login"
 						IsEnabled="true"
 						HorizontalOptions="CenterAndExpand"
-						VerticalOptions="CenterAndExpand"/>
+						VerticalOptions="CenterAndExpand"
+						WidthRequest="200"/>
 				
 
 				
